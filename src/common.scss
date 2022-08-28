@@ -1,0 +1,89 @@
+.header {
+  background-color: orange;
+  color: white;
+  box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
+  h2 {
+    padding: 10px 0;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.btn{
+    transition: all 0.2s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.createNote {
+  width: 50rem;
+  margin-top: 20px;
+
+  input {
+    &.form-control {
+      border-bottom: 1px solid lightgray;
+      border-radius: 0;
+    }
+  }
+  .form-control {
+    border: 0;
+    &:active,
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .btn {
+    padding: 0;
+    position: absolute;
+    right: -10px;
+    background: orange;
+    border-radius: 50%;
+  }
+  .plus-icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+}
+
+.notes {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  p {
+    margin-bottom: 0;
+  }
+  .col-12{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    position: absolute;
+    right: -10px;
+    background: orange;
+    border-radius: 50%;
+  }
+  .remove-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+    vertical-align: text-bottom;
+  }
+}
+
+.notesHolder {
+  column-count: 5;
+  column-gap: 10px;
+  margin-top: 20px;
+}
